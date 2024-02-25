@@ -1,2 +1,2 @@
 # tweeter
-A Full Stack based application 
+A Full Stack based application using HTML,CSS,and JS 
