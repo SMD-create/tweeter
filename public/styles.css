@@ -1,0 +1,343 @@
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(45deg, rgb(0, 0, 255), rgb(107, 213, 249), white);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: pulse 15s infinite alternate;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 15pc;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(0, 0, 255), rgb(107, 213, 249), white);
+    color: #fff;
+    animation: pulse 15s infinite alternate-reverse;
+  }
+
+  /* Animation keyframes */
+  @keyframes pulse {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .sidebar ul li a svg{
+    margin-right: 10px;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #444;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  #post-form {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .post {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .post p {
+    margin: 0;
+  }
+  
+  .post .timestamp {
+    color: #999;
+    font-size: 0.8em;
+  }
+
+.widgets {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+  }
+  
+  .widget {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .widget:last-child {
+    border-bottom: none;
+  }
+  
+  .widget h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .widget ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .widget ul li {
+    padding: 5px 0;
+  }
+  
+  .widget ul li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .sidebar .twitter-bird-icon {
+    text-align: center; /* Center the icon horizontally */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    width: 50px; /* Adjust the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    padding: 5px; /* Add some padding for border */
+    color:#fff;
+  }
+  
+  #login-form {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 85px;
+    border:100px solid #007bff;
+    height:300px;
+    border-radius: 55%;
+  }
+  
+  #login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #login-form input {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #login-form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #login-form a{
+    width: 20%;
+    padding: 10px;
+  }
+
+  #login-form a button{
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .twitter-bird-icon{
+    margin-left: 50px;
+  }
+
+  header section nav .search input{
+    width: 30%;
+    padding: 3px 15px;
+    font-size: 12px;
+  }
+
+  header section nav .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #signup-form{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border:100px solid #007bff;
+    height:300px;
+    border-radius: 25%;
+  }
+  #signup-form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #signup-form input{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #signup-form button:hover {
+    background-color: #0056b3;
+  }
+
+  #signup-form a{
+    width: 20%;
+    padding: 10px;
+  }
+  
+  #signup-form a button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #signup-form a button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  #signup-form a button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .profile-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .profile-info img {
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+  }
+
+  .profile-info img:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+  }
+  
+  .profile-stats {
+    display: flex;
+  }
+  
+  .profile-stats div {
+    margin-right: 20px;
+  }
+  
+  .profile-stats h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-stats p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .profile-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+  }

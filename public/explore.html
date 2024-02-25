@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    /* Add this CSS to adjust the size of the icons */
+    li svg {
+      width: 24px; /* Adjust the width to your desired size */
+      height: 24px; /* Adjust the height to your desired size */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tweeter</h1>
+  </header>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-header">
+        <img src="./assets/brock.jpg" alt="Profile Picture">
+        <h2>SMDCena</h2>
+      </div>
+        <div class="twitter-bird-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" id="twitter"><path fill="#24A9E6" d="M61.763 7.078a25.503 25.503 0 0 1-8.213 3.213c-2.351-2.577-5.713-4.184-9.434-4.184-7.133 0-12.92 5.934-12.92 13.252 0 1.04.111 2.046.334 3.018-10.744-.554-20.263-5.825-26.643-13.853a13.499 13.499 0 0 0-1.75 6.672c0 4.597 2.266 8.652 5.735 11.029C6.756 26.161 5 25.558 3 24.572v.165C3 31.16 7.47 36.518 13.388 37.73c-1.085.312-2.22.467-3.399.467-.831 0-1.643-.08-2.428-.234 1.646 5.262 6.418 9.097 12.076 9.199-4.421 3.557-9.999 5.677-16.052 5.677-1.04 0-2.074-.06-3.084-.184 5.722 3.754 12.519 5.95 19.814 5.95 23.777 0 36.776-20.19 36.776-37.707 0-.574-.013-1.152-.033-1.717a26.523 26.523 0 0 0 6.444-6.858 25.293 25.293 0 0 1-7.423 2.086 13.24 13.24 0 0 0 5.684-7.331z"></path><path fill="#24A9E6" d="M61.763 7.078a25.503 25.503 0 0 1-8.213 3.213c-2.351-2.577-5.713-4.184-9.434-4.184-7.133 0-12.92 5.934-12.92 13.252 0 1.04.111 2.046.334 3.018-10.744-.554-20.263-5.825-26.643-13.853a13.499 13.499 0 0 0-1.75 6.672c0 4.597 2.266 8.652 5.735 11.029C6.756 26.161 5 25.558 3 24.572v.165C3 31.16 7.47 36.518 13.388 37.73c-1.085.312-2.22.467-3.399.467-.831 0-1.643-.08-2.428-.234 1.646 5.262 6.418 9.097 12.076 9.199-4.421 3.557-9.999 5.677-16.052 5.677-1.04 0-2.074-.06-3.084-.184 5.722 3.754 12.519 5.95 19.814 5.95 23.777 0 36.776-20.19 36.776-37.707 0-.574-.013-1.152-.033-1.717a26.523 26.523 0 0 0 6.444-6.858 25.293 25.293 0 0 1-7.423 2.086 13.24 13.24 0 0 0 5.684-7.331z"></path><path fill="#169FDB" d="M63.5 12.322a25.293 25.293 0 0 1-7.423 2.086 13.223 13.223 0 0 0 5.686-7.331 25.503 25.503 0 0 1-8.213 3.213c-2.351-2.577-5.713-4.184-9.434-4.184-7.133 0-12.92 5.934-12.92 13.252 0 1.04.111 2.046.334 3.018a.073.073 0 0 1-.015-.002L50.943 41.81c4.046-6.416 6.146-13.879 6.146-20.912 0-.574-.013-1.152-.033-1.717a26.528 26.528 0 0 0 6.444-6.859zM19.625 47.171c-4.42 3.551-9.994 5.667-16.041 5.667-1.04 0-2.074-.06-3.085-.184 5.722 3.754 12.519 5.95 19.814 5.95a38.05 38.05 0 0 0 9.555-1.191L19.625 47.171z"></path><path fill="#3DC8F9" d="M61.763 7.078a25.503 25.503 0 0 1-8.213 3.213c-2.351-2.577-5.713-4.184-9.434-4.184-7.133 0-12.92 5.934-12.92 13.252 0 1.04.111 2.046.334 3.018-8.843-.455-16.854-4.113-22.969-9.867 6.28 6.633 14.898 10.902 24.5 11.397a13.443 13.443 0 0 1-.334-3.016c0-7.32 5.787-13.254 12.921-13.254 3.72 0 7.082 1.608 9.433 4.184M11.65 38.089a12.729 12.729 0 0 1-4.087-.126 13.295 13.295 0 0 0 4.079 6.155 13.324 13.324 0 0 1-2.547-4.625"></path><path fill="#24A9E6" d="M61.303 15.202c.791-.914 1.538-1.863 2.197-2.88-.942.429-1.923.786-2.922 1.099"></path><path fill="#3DC8F9" d="M1.796 53.072c-.271-.035-.702-.087-.997-.223a33.616 33.616 0 0 0 2.5 1.49c.602.042 1.208.204 1.817.204 6.053 0 11.63-2.543 16.053-5.543h-.021c-5.797 3-12.286 4.967-19.352 4.072zM7.856 25.421a13.388 13.388 0 0 1-3.188-8.694c0-2.36.606-4.577 1.662-6.502a38.305 38.305 0 0 1-1.443-1.7 13.499 13.499 0 0 0-1.75 6.672c0 4.117 1.841 7.794 4.719 10.224zM8.872 26.225C6.871 26.112 5 25.509 3 24.572v.165c0 4.117 1.833 7.79 4.704 10.218C5.73 32.629 5 29.594 5 26.268V26M26.896 15.793s1.957-5.994-8.929-9.052c0 0 .923 4.925 3.731 7.339 3.058 2.63 5.198 1.713 5.198 1.713zM29.121 13.369s2.261-1.32-.273-5.275c0 0-1.074 1.784-.87 3.309.224 1.659 1.143 1.966 1.143 1.966zM19.576 16.45s-2.383 1.089-4.159-3.259c0 0 2.076.149 3.207 1.193 1.229 1.139.952 2.066.952 2.066z"></path><path fill="#24A9E6" d="M29.614 20.863s-2.451.927-3.931-3.531c0 0 2.062.288 3.119 1.405 1.15 1.22.812 2.126.812 2.126z"></path><circle cx="23.288" cy="17.994" r=".979" fill="#24A9E6"></circle><circle cx="17.05" cy="10.533" r=".367" fill="#24A9E6"></circle><circle cx="24.817" cy="5.579" r=".184" fill="#24A9E6"></circle><circle cx="25.551" cy="8.392" r=".673" fill="#3DC8F9"></circle></svg>
+        </div>
+      <ul>
+        <li><a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f5552e" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            Home</a></li>
+        <li><a href="./explore.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#64e8c0" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            Explore</a></li>
+        <li><a href="./messages.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#dee13d" d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+            Notifications</a></li>
+        <li><a href="./messages.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ea4d74" d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 352h8.2c32.3-39.1 81.1-64 135.8-64c5.4 0 10.7 .2 16 .7V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM320 352H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H360.2C335.1 449.6 320 410.5 320 368c0-5.4 .2-10.7 .7-16l-.7 0zm320 16a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zM496 288c8.8 0 16 7.2 16 16v48h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16z"/></svg>
+            Messages</a></li>
+        <li><a href="./profile.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#5fe3ec" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM164.1 325.5C182 346.2 212.6 368 256 368s74-21.8 91.9-42.5c5.8-6.7 15.9-7.4 22.6-1.6s7.4 15.9 1.6 22.6C349.8 372.1 311.1 400 256 400s-93.8-27.9-116.1-53.5c-5.8-6.7-5.1-16.8 1.6-22.6s16.8-5.1 22.6 1.6zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+            Profile</a></li>
+      </ul>
+    </aside>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Page</title>
+  <style>
+    /* Basic styling */
+    .trending-topics {
+      margin-top: 40px;
+    }
+
+    #trending-topics-list{
+      list-style-type: none;
+    }
+    .trending-topic {
+      margin-bottom: 5px;
+    }
+
+    .trending-topic a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .trending-topic a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="display:flex; justify-content: center;margin-left:20px">Welcome to the Explore Page</h1>
+
+  <div class="trending-topics">
+    <br/>
+    <h2>Trending Topics</h2>
+    <ul id="trending-topics-list">
+      <!-- Trending topics will be dynamically inserted here -->
+    </ul>
+  </div>
+
+  <script>
+    // Dummy trending topics (replace with actual data from your backend)
+    const trendingTopics = [
+      "#MITB",
+      "#Trish",
+      "#Prabhas",
+      "#Billa",
+      "#AskSK"
+    ];
+
+    // Function to dynamically populate trending topics list
+    function populateTrendingTopics() {
+      const trendingTopicsList = document.getElementById('trending-topics-list');
+
+      // Clear existing list items
+      trendingTopicsList.innerHTML = '';
+
+      // Add trending topics to the list
+      trendingTopics.forEach(topic => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `#${topic}`; // Link to the topic page or related content
+        link.textContent = topic;
+        listItem.appendChild(link);
+        trendingTopicsList.appendChild(listItem);
+      });
+    }
+
+    // Populate trending topics when the page loads
+    window.onload = populateTrendingTopics;
+  </script>
+</body>
+</html>
+
+    </div>
+</body>
+</html>
